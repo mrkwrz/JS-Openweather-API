@@ -1,0 +1,149 @@
+/* Created by Mark Wirz, 20. November 2018, Copyright */
+
+html{
+    
+}
+
+body{
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('https://wallpapershome.com/images/pages/pic_h/3945.jpg');
+    background-size: 110%;
+}    
+
+#WelcomeUser{
+    font-size: 40px; 
+    font-family:sans-serif;
+    font-style:italic;
+    text-align:center;
+}
+
+/* Weather Search */
+
+ #weather_change_form{
+    font:200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: inherit;
+    font-weight: lighter;
+    background-color: #D3D3D3;
+    background-blend-mode: lighten;
+    padding: 10px;
+    border-radius: 10%;
+    width: 600px;
+    height: 100px;
+    
+}
+
+    #weather_info{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: inherit;
+        font-weight: lighter;
+    }
+
+    #city_info{
+        margin-left:120px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: inherit;
+        font-weight: lighter;
+    }
+    
+    #country_info{
+        margin-left:205px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: inherit;
+        font-weight: lighter;
+    }
+
+    #city_searchbar{
+        margin-left:120px;
+        width:100px;
+    
+    }
+    
+    #country_searchbar{
+        margin-left:130px;
+        width:100px;
+    
+    }
+
+    #weather_search_button{
+        margin-top: 10px;
+        margin-left: 260px;
+    }
+
+/* Weather Output */
+
+#weather_output{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #D3D3D3;
+    background-blend-mode: lighten;
+    padding: 10px;
+    border-radius: 10%;
+    width: 600px;
+    height: 250px;
+    margin-top: 80px;
+}
+
+    .weather_data{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: inherit;
+        font-weight: lighter;
+        margin-top: 30px;
+    }
+
+/* NameChange */
+
+#name_changing_form{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: inherit;
+    font-weight: lighter;
+    background-color: #D3D3D3;
+    background-blend-mode: lighten;
+    padding: 10px;
+    border-radius: 10%;
+    width: 300px;
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 300px) {
+
+    #WelcomeUser{
+        top: 5%;
+        bottom:70%;
+        left: 10%;
+        right: 25%;
+    }
+
+    #weather_change_form{
+        left: 25%;
+        right: 25%;
+        top: 15%;
+        position: absolute;
+    }
+
+    #weather_output{
+        left:25%;
+        top:25%;
+        position:absolute;
+    }
+
+
+    #name_changing_form{
+        left: 5%;
+        right: 90%;
+        position: absolute;
+        top: 80%;
+        bottom: 3%;
+    }
+
+    #weather_city_name{
+        top: 2%;
+    }
+
+    #weather_humidity{
+        bottom: 5%;
+    }
+}

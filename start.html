@@ -1,0 +1,71 @@
+<!-- Created by Mark Wirz, 20. November 2018, Copyright -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+
+    <head>
+        
+        <title>Start</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script type="text/JavaScript" src="index.js"></script>
+        
+    </head>
+
+<!-- Body -->
+
+    <body>
+<!-- StartProgramm Title -->
+
+        <h1 id="WelcomeUser"></h1>
+   
+        <!-- Weather Search Form-->
+        <div id = "weather_change_form">
+            <div id="weather_info">For which city you want to get weather information?</div>
+        <br>
+
+            <a id="city_info" type="text">City:</a>
+            <a id="country_info" type="text">Country:</a>
+        <br>
+            <!-- Searchbar WeatherChange -->
+            <input id="city_searchbar" type="text">
+            <input id="country_searchbar" type="text">
+        <br>
+            <!-- Searchbutton WeatherChange -->
+            <input id="weather_search_button" type="button" value="Search" onclick="SearchCity()">
+        </div>
+    
+
+        <!-- Output Weather Search-->
+        <form id="weather_output">
+
+            <div class="weather_data" id="weather_city_name"></div>
+            <div class="weather_data" id="weather_country_name"></div>
+            <div class="weather_data" id="weather_temperature"></div>
+            <div class="weather_data" id="weather_wind_speed"></div>
+            <div class="weather_data" id="weather_humidity"></div>
+            
+
+        </form>
+
+        <!-- NameChange Form-->
+        <form id="name_changing_form"> 
+            <div>Do you want to tell us your name?</div>
+    <br>
+            <input  type="text" 
+                    id="change_name_textbox"
+                    >
+            <input type="button" id="change_text_button" onclick="ChangeName()" value="Hello!">
+
+        </form>
+    </body>
+</html>

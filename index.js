@@ -114,7 +114,7 @@
             document.getElementById("weather_humidity").innerHTML = `Humidity: ${humidity}%`;
         })
         // case: Error
-        .fail(function(textStatus, error ) {
+        .fail(function(errorString,textStatus, error ) {
             var err = textStatus + ", " + error;
             alert( "Request Failed: " + err );
     })

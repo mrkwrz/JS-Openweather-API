@@ -17,8 +17,15 @@
             name[zl]
             console.log(name[zl]);
 
-            // If name contains a number => error
+            // If name contains a number => error & Whitespace allowance
+            //
             if(!(isNaN(name[zl]))){
+
+                if(name[zl] == " "){ 
+                    document.getElementById("WelcomeUser").innerHTML = `Welcome ${name}!`;
+                    return ""
+                }
+
                 alert("A name does not include a number ;)");
                 return "";
             } 
